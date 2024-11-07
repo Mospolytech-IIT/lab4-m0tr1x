@@ -1,0 +1,1 @@
+"""This module represents funcs that described in step 2 of lab"""

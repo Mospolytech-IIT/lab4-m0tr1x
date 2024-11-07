@@ -8,5 +8,5 @@ def sqrt(number: int ) -> float:
     #Catching too general exception Exception (8:11) [broad-exception-caught]
     #Умышленно игнорируем, потому что в задании просят общий тип исключений
     except Exception as e:
-        print(f"Ошибка: {e}")
+        print(f"Error: {e}")
         return -1
