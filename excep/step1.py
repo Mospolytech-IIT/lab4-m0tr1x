@@ -3,13 +3,13 @@
 def check_age(age: int) -> bool:
     """This function checks if the age valid for our goals"""
     if age < 0 or age > 100:
-        raise ValueError("Invalid age")
+        raise ValueError
     return True
 
 def check_gender(gender: str) -> bool:
     """This function checks if the gender valid for our goals"""
     if gender not in ["male", "female"]:
-        raise ValueError("Invalid gender")
+        raise ValueError
     if gender == "male":
         return True
     return False

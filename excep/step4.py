@@ -5,13 +5,13 @@ def calculate_age(birth_year) -> int:
     """This function calculates the age of a given person"""
     try:
         current_year = datetime.now().year
-        if isinstance(birth_year, int):
-            raise TypeError("Birth year must be integer")
+        if not isinstance(birth_year, int):
+            raise TypeError
         age = current_year - birth_year
         return age
     except TypeError as e:
-        print(f"Type Error: {e}")
-        return 0
+        print(f"Type Error {e}")
+        return None
     finally:
         print("Thank you for using our service")
 
